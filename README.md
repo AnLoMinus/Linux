@@ -4,6 +4,11 @@
 
 </div>
 
+---
+
 - Where there is a shell, there is a way
 
+---
+
+- torvalds: [linux](https://github.com/torvalds/linux)
 
