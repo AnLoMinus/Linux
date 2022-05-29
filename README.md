@@ -6,7 +6,9 @@
 
 ---
 
-- [Linux Bash Terminal Keyboard Shortcuts](https://github.com/Anlominus/Linux/blob/main/Terminal/Shortcuts.md)
+- Terminal
+  - [Linux Bash Terminal Keyboard Shortcuts](https://github.com/Anlominus/Linux/blob/main/Terminal/Shortcuts.md)
+  - [Aliases]()
 
 
 - Where there is a shell, there is a way
