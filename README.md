@@ -4,6 +4,8 @@
 
 </div>
 
+- Where there is a shell, there is a way
+
 ---
 
 - Terminal
@@ -11,7 +13,6 @@
   - [Aliases](https://github.com/Anlominus/Linux/blob/main/Terminal/Aliases.md)
 
 
-- Where there is a shell, there is a way
 
 ---
 
