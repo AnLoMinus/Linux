@@ -97,3 +97,7 @@ https://www.cheatography.com/elpedro/cheat-sheets/terminator/pdf/   <br/>
 ## Terminator Documentation
 
 https://terminator-gtk3.readthedocs.io/
+
+---
+
+- [Themes](https://github.com/EliverLara/terminator-themes/blob/master/themes.md)
