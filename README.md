@@ -12,6 +12,9 @@
   - [Terminator](Terminator.md)
   - [Linux Bash Terminal Keyboard Shortcuts](https://github.com/Anlominus/Linux/blob/main/Terminal/Shortcuts.md)
   - [Aliases](https://github.com/Anlominus/Linux/blob/main/Terminal/Aliases.md)
+  - [Gogh](https://github.com/Gogh-Co/Gogh) ~ Color Scheme for your Terminal
+
+
 
 
 
