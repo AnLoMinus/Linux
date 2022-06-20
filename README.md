@@ -13,6 +13,10 @@
   - [Linux Bash Terminal Keyboard Shortcuts](https://github.com/Anlominus/Linux/blob/main/Terminal/Shortcuts.md)
   - [Aliases](https://github.com/Anlominus/Linux/blob/main/Terminal/Aliases.md)
   - [Gogh](https://github.com/Gogh-Co/Gogh) ~ Color Scheme for your Terminal
+  - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+    > Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
+    > ![image](https://user-images.githubusercontent.com/51442719/174651686-c7c34d98-f3bf-4f63-988f-f0aa6a0320d7.png)
+ 
 
 
 
