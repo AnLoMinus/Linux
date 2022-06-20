@@ -33,17 +33,8 @@
   > Teaching first-year university students or high schoolers to use a Unix shell is not always the easiest or most entertaining of tasks. <br>
   > GameShell was devised as a tool to help students at the Université Savoie Mont Blanc to engage with a real shell, in a way that encourages learning while also having fun.
   > ![](https://github.com/phyver/GameShell/raw/master/Images/gameshell_first_mission_small.gif)
-
-
-
-
-
-
- 
-
-
-
-
+## [NoPayStation](https://nopaystation.com/)
+  > NoPayStation - No Ads. No Waiting. No Bullshit.
 
 ---
 
