@@ -4,7 +4,7 @@ This cheat sheet offers a set of commands that you can use for quick reference. 
 
 
 ---
-# INDEX
+# Content
 - [Basic Linux Commands](#basic-linux-commands)
 - [Networking Commands](#networking-commands)
 - [File Permission Commands](#file-permission-commands)
