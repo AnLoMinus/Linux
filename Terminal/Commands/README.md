@@ -1,10 +1,17 @@
-There are hundreds – possibly thousands –  commands available in Linux. Remembering every command is not possible and it can be quite daunting for a novice user. The good news is that you don't need to remember each command. Only a very small subset of those commands are used on a day-to-day basis.
+# Commands
 
-This cheat sheet offers a set of commands that you can use for quick reference. I have prepared this Linux Commands Cheat Sheet as quick reference for both experienced and basic users.
+- There are hundreds – possibly thousands –  commands available in Linux. <br>
+- Remembering every command is not possible and it can be quite daunting for a novice user. <br>
+- The good news is that you don't need to remember each command. <br>
+- Only a very small subset of those commands are used on a day-to-day basis.<br><br>
+- This cheat sheet offers a set of commands that you can use for quick reference. <br>
+- I have prepared this Linux Commands Cheat Sheet as quick reference for both experienced and basic users.
 
 
 ---
+
 # Content
+
 - [Basic Linux Commands](#basic-linux-commands)
 - [Networking Commands](#networking-commands)
 - [File Permission Commands](#file-permission-commands)
