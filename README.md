@@ -60,5 +60,6 @@ cat /etc/os-release 2>/dev/null # universal on modern systems
 
 ---
 
-- torvalds: [linux](https://github.com/torvalds/linux)
-
+## torvalds: [linux](https://github.com/torvalds/linux)
+ 
+## EmreOvunc: [Linux-System-Management-Scripts-Tricks](https://github.com/EmreOvunc/Linux-System-Management-Scripts-Tricks)
