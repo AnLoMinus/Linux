@@ -10,6 +10,7 @@
   - `Alt + F / Esc + F`	Moves the cursor one word forward
   - `Alt + B / Esc + B`	Moves the cursor one word backward
   - `Alt + Ctrl + ] + x`	Moves cursor to the previous occurrence of x
+
 - Bash Control/Process
   - `Ctrl + L`	Similar to clear command, clears the terminal screen
   - `Ctrl + S`	Stops command output to the screen
@@ -17,6 +18,7 @@
   - `Ctrl + Q`	Resumes suspended command
   - `Ctrl + C`	Sends SIGI signal and kills currently executing command
   - `Ctrl + D`	Closes the current terminal
+
 - Bash History
   - `Ctrl + R`	Incremental reverse search of bash history
   - `Alt + P`	Non-incremental reverse search of bash history
@@ -41,6 +43,7 @@
   - `!n`	Run nth command from the bash history
   - `!n:p`	Prints the command !n executes
   - `!n:$`	Repeat arguments from the last command (i.e, from argument n to $)
+
 - Bash Editing
   - `Ctrl + U`	Deletes before the cursor until the start of the command
   - `Ctrl + K`	Deletes after the cursor until the end of the command
@@ -54,6 +57,7 @@
   - `Alt + >`	Moves to the last line of the bash history
   - `Esc + T`	Switch between last two words before cursor
   - `Alt + T`	Switches current word with the previous
+
 - Bash Information
   - `TAB`	Autocompletes the command or file/directory name
   - `~TAB TAB`	List all Linux users
@@ -62,7 +66,6 @@
   - `Alt + *`	Display files/folders in the current path as parameter
 
 ---
-
 
 # Bash shortcuts
   - `Arrow keys` (left, right)     move inside the command

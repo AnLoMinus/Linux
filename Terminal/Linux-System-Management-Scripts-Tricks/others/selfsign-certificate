@@ -1,0 +1,8 @@
+cd /usr/local/share/ca-certificates/
+mkdir test
+cd test/
+mv ~/Dowloads/test.crt .
+chmod 644 test.crt
+cd ..
+chmod 755 test
+update-ca-certificates
