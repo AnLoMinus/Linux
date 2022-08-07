@@ -1,0 +1,137 @@
+###########################################################################
+### Step: 01 ###		CHOOSING LOGIN INFORMATION
+###########################################################################
+# Usernames and passwords will be chosen out of a pool, just to keep
+#things reasonably quick. But not so quick you have no chance.
+#
+# Notice: Of the top 39 passwords, ONE, has an evil 'swear'. This trend
+#continues, and exacerbates due to monty-hall-type logic. If you are using
+#dictionary words, do NOT exclude any from what you can use. EVER.
+
+	CHOOSE A USERNAME:
+			student     |     ccdc     |     user     |     ghost
+			cartman     |     stan     |     kyle     |     kenny
+			pcprincipal |     reality  |     jack     |     kate
+			saryn       |     rhino    |     nidus    |     lazors
+
+
+	CHOOSE A PASSWORD:
+		123456   |   12345      |   123456789 |   password  |   iloveyou
+		princess |   1234567    |   rockyou   |   12345678  |   abc123
+		nicole   |   daniel     |   babygirl  |   monkey    |   lovely
+		654321   |   michael    |   ashley    |   qwerty    |   111111
+		000000   |   michelle   |   tigger    |   sunshine  |   chocolate
+		soccer   |   anthony    |   friends   |   butterfly |   purple
+		jordan   |   liverpool  |   justin    |   loveme    |   fuckyou
+
+
+###########################################################################
+### Step: 02 ###		SETTING UP YOUR BOX
+###########################################################################
+#++++++++++++++++++++
+# Create a new VM
+#++++++++++++++++++++
+	OS: CentOS 6.0 (server)
+	Network01: NAT
+	Network02: Bridged
+	User: From Above
+	Password: From Above
+
+#++++++++++++++++++++
+# Enabling Networks
+#++++++++++++++++++++
+	#edit your FIRST interface			(/etc/sysconfig/network-scripts/ifcfg-eth0)
+	#to have ONLY these 3 things, remember that 'eth0' might be different for you
+		DEVICE="eth0"
+		BOOTPROTO="dhcp"
+		ONBOOT="yes"
+
+	#edit your SECOND interface			(/etc/sysconfig/network-scripts/ifcfg-eth1)
+	#to have ONLY these 4 things, remember that 'eth1' might be different for you
+		DEVICE="eth1"
+		BOOTPROTO="static"
+		ONBOOT="yes"
+		IPADDR=172.16.240.x
+
+	#reboot to make sure network stuff applies correctly AND will survive the reboot
+		init 6
+		#then after reboot
+			ip a
+
+#++++++++++++++++++++
+# Setting up 'sudo'
+#++++++++++++++++++++
+	#Installing sudo
+		yum install sudo
+		#hit 'yes' for any questions
+
+
+	#Give your user sudo powers
+		usermod -aG wheel USER
+
+		# then type (as root) #
+		visudo
+			#uncomment the line starting with '# %wheel'
+			| ## Allows people in group wheel to run all commands
+ 			|  %wheel ALL=(ALL)       ALL
+
+		# test that sudo works #
+			#switch to user
+				su - USER
+			#testing sudo (it should prompt for pw, then allow you to edit. then close it)
+				sudo visudo
+
+---------------------------------------------------------
+
+## (optional) If you duplicated a spun up VM ##
+	# Create a new USER with your chosen PASSWORD. #
+	# Give said user SUDO powers. #
+		usermod -aG wheel USER
+
+	# Test SUDO while logged in as the new user #
+		#switch to user
+			su - USER
+		#then try
+			sudo visudo
+
+
+###########################################################################
+### Step: 04 ###		CREATE A SNAPSHOT
+###########################################################################
+	# CREATE A SNAPSHOT
+	# CREATE A SNAPSHOT
+	# CREATE A SNAPSHOT
+
+
+###########################################################################
+### Step: 05 ###		SSH'ING INTO THE BOX
+###########################################################################
+# Connect to your VM
+	- Using another VM
+	- Using your preferred ssh client on host machine (mobaxterm, putty, etc)
+	- Using windows' ssh
+
+# No using the direct console in your hypervisor (vm workstation)
+#at least not for the target machine.
+
+
+###########################################################################
+### Step: 06 ###		OPENING THE FLOODGATES
+###########################################################################
+# Let me know that you are ready. After ~50% of people are ready
+#i'll release the hounds.
+
+
+###########################################################################
+### Step: 07 ###		DEFEND THE MOTHERLAND
+###########################################################################
+# ???
+#
+# ???
+
+
+###########################################################################
+### Step: 08 ###		THERE CAN BE ONLY ONE
+###########################################################################
+# SUCCESS!
+#(..or the opposite..)

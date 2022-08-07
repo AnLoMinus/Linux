@@ -1,0 +1,35 @@
+# Debian Ubuntu cheatsheet 
+
+#create a user 
+sudo adduser exammple_user
+
+#add user to sudo 
+sudo adduser example_user sudo 
+
+#change passwords of user
+sudo passwd example_user 
+
+#remove user from sudo/ group 
+sudo deluser example_user sudo 
+
+#list sudo users 
+getent group sudo | cut -d: -f4 
+
+#configure time 
+sudo dpkg-reconfigure tzdata 
+
+#save past history 
+history >> history.txt 
+ 
+#Determine running services 
+sudo ss -atpu 
+
+#Uninstall 
+sudo apt-get purge package_name 
+#Run again to verify that the unwanted services are no longer running 
+sudo ss -atpu
+
+#assign ip, netmask, broadcast 
+ifconfig eth0 172.16.25.125 netmask 255.255.255.224 broadcast 172.16.25.63 
+
+ 

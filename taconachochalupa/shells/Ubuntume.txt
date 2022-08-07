@@ -1,0 +1,37 @@
+$ sudo chmod 0600 /boot/System.map-* 
+or try 
+$ sudo chmod 0600 /boot/System.map- 
+
+
+To properly set the owner of /etc/shadow
+$ sudo chmod 0640 /etc/shadow 
+$ sudo chown root /etc/shadow 
+$ sudo chgrp shadow /etc/shadow 
+
+$ sudo chmod 0640 /etc/gshadow To properly set the owner of /etc/gshadow, run the command: $ sudo chown root /etc/gshadow To properly set the group owner of /etc/gshadow, run the command: $ sudo chgrp shadow /etc/gshadow 
+
+$ sudo chmod 0644 /etc/passwd To properly set the owner of /etc/passwd, run the command: $ sudo chown root /etc/passwd To properly set the group owner of /etc/passwd, run the command: $ sudo chgrp root /etc/passwd 
+
+$ sudo chmod 0644 /etc/passwd To properly set the owner of /etc/passwd, run the command: $ sudo chown root /etc/passwd To properly set the group owner of /etc/passwd, run the command: $ sudo chgrp root /etc/passwd 
+
+$ sudo sysctl -w fs.suid_dumpable=0 If this is not the system's default value, add the following line to /etc/sysctl.conf: fs.suid_dumpable = 0 
+
+$ sudo sysctl -w fs.protected_symlinks=1 If this is not the system's default value, add the following line to /etc/sysctl.conf: fs.protected_symlinks = 1 
+
+$ sudo sysctl -w fs.protected_hardlinks=1 If this is not the system's default value, add the following line to /etc/sysctl.conf: fs.protected_hardlinks = 1 
+
+The sudo NOPASSWD tag, when specified, allows a user to execute commands using sudo without having to authenticate. This should be disabled by making sure that the NOPASSWD tag does not exist in /etc/sudoers configuration file or any sudo configuration snippets in /etc/sudoers.d/. 
+
+The sudo !authenticate option, when specified, allows a user to execute commands using sudo without having to authenticate. This should be disabled by making sure that the !authenticate option does not exist in /etc/sudoers configuration file or any sudo configuration snippets in /etc/sudoers.d/. 
+
+apt-get install rsyslog 
+$ sudo chkconfig --level 2345 rsyslog on  
+
+#Uninstall telnet, inet-based telnet server (and daemon), ssl compliant telnet server, nis (yellowpages), ntpdate, ntpd
+
+#The default setting in /etc/ssh/sshd_config is correct, and can be verified by ensuring that the following line appears: Protocol 2 
+
+#To disable root login via SSH, add or correct the following line in /etc/ssh/sshd_config: PermitRootLogin no 
+#add or correct the following line in /etc/ssh/sshd_config: PermitEmptyPasswords no 
+ 
+ 

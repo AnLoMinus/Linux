@@ -1,0 +1,4 @@
+# ignores the .ftpconfig file for atom's sftp
+.ftpconfig
+f.sh
+u.sh

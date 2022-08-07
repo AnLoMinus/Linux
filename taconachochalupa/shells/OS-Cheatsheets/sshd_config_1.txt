@@ -1,0 +1,45 @@
+#sshd_config hardening 
+
+Port 2222
+Protocol 2
+
+AllowUsers blueteam
+DenyUsers admin games mail root
+
+LoginGraceTime 2m
+PermitRootLogin no
+StrictModes yes
+
+MaxAuthTries 3
+MaxSessions 3
+ClientAliveCountMax 3
+
+PasswordAuthentication no
+PermitEmptyPasswords no
+KerberosAuthentication no
+ChallengeResponseAuthentication no
+
+AuthenticationMethods publickey
+PubkeyAuthentication yes
+UsePAM yes
+
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+IgnoreRhosts yes
+LogLevel VERBOSE
+
+KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group-exchange-sha256
+Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr
+MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256,umac-128@openssh.com
+# Log sftp level file access (read/write/etc.) that would not be easily logged otherwise.
+Subsystem sftp  /usr/lib/ssh/sftp-server -f AUTHPRIV -l INFO
+X11Forwarding no
+PrintMotd no
+UsePrivilegeSeparation sandbox
+PermitUserEnvironment no
+Banner none
+AcceptEnv LANG LC_*
+
+
+
