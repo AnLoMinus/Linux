@@ -63,3 +63,10 @@ cat /etc/os-release 2>/dev/null # universal on modern systems
 ## torvalds: [linux](https://github.com/torvalds/linux)
  
 ## EmreOvunc: [Linux-System-Management-Scripts-Tricks](https://github.com/EmreOvunc/Linux-System-Management-Scripts-Tricks)
+
+## [Color-Scripts](https://github.com/stark/Color-Scripts) Color scripts created by various people that was scattered around the web now in one place.
+
+
+
+---
+
