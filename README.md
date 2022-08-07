@@ -9,6 +9,7 @@
 ---
 
 # Terminal
+## 🤩 [Terminals Are Sexy](https://github.com/k4m4/terminals-are-sexy)
 ## [Terminator](Terminator.md)
 ## [Linux Bash Terminal Keyboard Shortcuts](https://github.com/Anlominus/Linux/blob/main/Terminal/Shortcuts.md)
 ## [Aliases](https://github.com/Anlominus/Linux/blob/main/Terminal/Aliases.md)
